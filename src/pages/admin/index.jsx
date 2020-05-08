@@ -2,7 +2,6 @@ import React, { Component } from 'react';
 import './style.less';
 import { Card, Button } from 'antd';
 import { connect } from 'dva';
-import CustomBreadcrumb from '../compontent/customBreadcrumb'
 
 const namespace = 'puzzlecards';
 
@@ -31,7 +30,6 @@ class Exa extends Component {
   render() {
     return (
       <div>
-        <CustomBreadcrumb arr={['列表']} />
         <div className="container">
           {
             this.props.cardList.map(card => {

@@ -1,12 +1,12 @@
 import React, { Component } from 'react';
 import './style.less';
-import { SiderNav, HeaderBar } from '../../../component';
+import { HeaderBar } from '../../../component';
 import { Layout } from 'antd';
 import withRouter from 'umi/withRouter'
 
 // import screenfull from 'screenfull'
-// Badge,
-const { Content, Footer, Sider } = Layout;
+// Footer,
+const { Content, } = Layout;
 @withRouter
 class index extends Component {
   state = {
@@ -17,7 +17,7 @@ class index extends Component {
 
   toggle = () => {
     // console.log(this)  //状态提升后，到底是谁调用的它
-    // console.log('1',this.state.collapsed)
+    console.log('1', this.state.collapsed)
     this.setState({
       collapsed: !this.state.collapsed,
       openKeys: [],
@@ -116,17 +116,12 @@ class index extends Component {
     // console.log('onClick render()', this.state.selectedKeys)
     return (
       <Layout style={{ minHeight: '100vh' }}>
-        <Sider collapsible
-          trigger={null}
-          collapsed={this.state.collapsed}>
-          <SiderNav collapsed={this.state.collapsed} selectedKeys={this.state.selectedKeys} openKeys={this.state.openKeys} onClick={this.onClick} onOpenChange={this.onOpenChange} />
-        </Sider>
         <Layout>
           <HeaderBar collapsed={this.state.collapsed} onToggle={this.toggle} onClick={this.onClick}></HeaderBar>
           <Content className="content-container">
             <div onClick={this.onClick}>{this.props.children}</div>
           </Content>
-          <Footer style={{ textAlign: 'center' }}>React admin ©2020 Created by Pass Party</Footer>
+          {/* <Footer style={{ textAlign: 'center' }}>React admin ©2020 Created by Pass Party</Footer> */}
         </Layout>
       </Layout>
     );

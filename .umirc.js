@@ -1,3 +1,11 @@
+/*
+ * @Description: 
+ * @Version: 2.0
+ * @Autor: Party
+ * @Date: 2020-01-16 10:20:45
+ * @LastEditors: Party
+ * @LastEditTime: 2020-05-08 15:16:52
+ */
 
 // ref: https://umijs.org/config/
 export default {
@@ -9,29 +17,13 @@ export default {
     routes: [
       {
         path: '/',
-        component: './exampletwo',
+        component: './home',
       }, {
         path: '/home',
-        component: './exampletwo',
-      }, {
-        path: '/laptop/list',
-        name:'404',
-        component: './example',
-      }, {
-        path: '/laptop/gobang',
-        component: './gobang',
-      }, {
-        path: '/edit/form/adminform',
-        component: './example',
-      }, {
-        path: '/edit/form/stepform',
-        component: './gobang',
-      }, {
-        path: '/edit/admin',
-        component: './gobang',
+        component: './home',
       }, {
         path: '/admin',
-        component: './example',
+        component: './admin',
       },]
   }],
   plugins: [
@@ -41,7 +33,7 @@ export default {
       dva: true,
 
       dynamicImport: false,
-      title: 'sbd',
+      title: 'manage',
       dll: false,
 
       routes: {
