@@ -7,7 +7,7 @@ export default class extends Component {
     super(props);
     this.state = {
       srcUrl: '',
-      srcList: ['https://www.oschina.net/', 'https://pro.bfops.cn/zentao/my/', 'http://192.168.23.232/#/home', 'http://localhost:8080/#/userAnalysis?key=year_action'],
+      srcList: ['https://element.eleme.cn/#/zh-CN/component/notification', 'https://pro.bfops.cn/zentao/my/', 'http://192.168.23.232/#/home'],
     };
   }
   //插入DOM前的回调函数

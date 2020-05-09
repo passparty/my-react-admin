@@ -4,7 +4,7 @@
  * @Autor: Party
  * @Date: 2020-01-16 10:20:45
  * @LastEditors: Party
- * @LastEditTime: 2020-05-08 15:16:52
+ * @LastEditTime: 2020-05-09 13:58:02
  */
 
 // ref: https://umijs.org/config/
@@ -33,7 +33,7 @@ export default {
       dva: true,
 
       dynamicImport: false,
-      title: 'manage',
+      title: '项目管理系统',
       dll: false,
 
       routes: {

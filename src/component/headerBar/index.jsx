@@ -62,7 +62,7 @@ export default class extends Component {
     )
     return (
       <Header className="header-container" >
-        <span className='header-p'>后台管理系统</span>
+        <span className='header-p'>项目管理系统</span>
         <div className='header-div'>
           <ul className='header-ul'>
             <li><Icon style={{ fontSize: '14px' }} type={icon} onClick={this.screenfullToggle} /></li>
